@@ -64,6 +64,6 @@ app.get('/api/:stateName', (req, res) => {
 
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
           console.log(`Server is working on port: ${PORT}`);
 })
